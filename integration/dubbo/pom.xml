@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<artifactId>dubbo-plus</artifactId>
+		<groupId>net.dubboclub</groupId>
+		<version>0.0.6</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>cat-monitor</artifactId>
+
+	<properties>
+		<java_source_version>1.8</java_source_version>
+		<java_target_version>1.8</java_target_version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.dianping.cat</groupId>
+			<artifactId>cat-client</artifactId>
+			<version>3.1.0</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>Nexus Releases Repository</name>
+			<url>http://10.148.16.148:8081/nexus/content/repositories/releases/</url>
+			<layout>default</layout>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Nexus Snapshot Repository</name>
+			<url>http://10.148.16.148:8081/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+	
+</project>
