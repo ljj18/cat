@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <config mode="client">
-	<domain id="cat-home" enabled="true"/>
+	<domain id="cat_home" enabled="true"/>
     <servers>
         <server ip="127.0.0.1" port="2280" http-port="8080"/>
     </servers>
